@@ -196,13 +196,3 @@ public class Student {
 * Instance variables **get default values**
 
 ---
-
-# 9. Conclusion
-
-Understanding **local and global variables** is essential in Java because it helps manage:
-
-* **Variable scope**
-* **Memory usage**
-* **Program structure**
-
-Correct use of variable scope improves **code readability, maintainability, and performance**.

@@ -21,7 +21,20 @@ Here:
 * `age` → Variable
 * `25` → Value
 
-Java is a **strongly typed language**, meaning every variable must have a defined data type before it is used.
+### How `int age = 25` is stored in memory?
+
+* Method starts → **Stack frame created**
+
+* `age` is a **local primitive variable**
+    * Stored in **Stack memory**
+    * Value stored **directly**
+
+* `int` size = **4 bytes (32 bits)**
+
+* Binary format:
+```
+25 → 00000000 00000000 00000000 00011001
+```
 
 ---
 
@@ -41,8 +54,9 @@ Data Types
 
 # 3. Primitive Data Types
 
-Primitive data types are **built-in data types provided by Java**.
-They store **actual values directly in memory**.
+Primitive data types are fix in size and their size is known at compile time.
+
+So Primitive data type memory is allocated at compile time only.
 
 Java has **8 primitive data types**.
 
@@ -188,15 +202,3 @@ String message = "Welcome to Java";
 * Choosing the correct data type improves **performance and readability**.
 
 ---
-
-# 10. Conclusion
-
-Data types are one of the **fundamental concepts in Java programming**.
-They define how data is stored, processed, and manipulated within a program.
-
-Understanding data types is essential before learning advanced Java concepts such as:
-
-* Classes and Objects
-* Collections
-* Multithreading
-* File Handling

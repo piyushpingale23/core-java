@@ -83,14 +83,42 @@ Although Java allows many naming styles, developers follow **standard naming con
 
 Common naming styles include:
 
-* Camel Case
 * Pascal Case
+* Camel Case
 * Snake Case
 * Upper Snake Case
 
 ---
 
-# 6. Camel Case
+# 6. Pascal Case
+
+Pascal Case is used mainly for **Class names and Interface names**.
+
+Rules:
+
+* First letter of **each word is uppercase**
+* No spaces between words
+
+Example:
+
+```
+Student
+BankAccount
+EmployeeDetails
+OrderService
+```
+
+Example in Java:
+
+```java
+class StudentDetails { }
+
+class BankAccount { }
+```
+
+---
+
+# 7. Camel Case
 
 Camel Case is the **most common naming convention for variables and methods in Java**.
 
@@ -114,41 +142,7 @@ Example in Java:
 int studentAge;
 double totalPrice;
 
-void calculateTotal() {
-
-}
-```
-
----
-
-# 7. Pascal Case
-
-Pascal Case is used mainly for **Class names and Interface names**.
-
-Rules:
-
-* First letter of **each word is uppercase**
-* No spaces between words
-
-Example:
-
-```
-Student
-BankAccount
-EmployeeDetails
-OrderService
-```
-
-Example in Java:
-
-```java
-class StudentDetails {
-
-}
-
-class BankAccount {
-
-}
+void calculateTotal() { }
 ```
 
 ---
@@ -194,15 +188,30 @@ Example in Java:
 
 ```java
 public class Constants {
-
     public static final int MAX_USERS = 100;
-
 }
 ```
 
 ---
 
-# 10. Java Naming Convention Summary
+# 10. Kebab Case
+
+Snake Case uses **hyphen to separate words**.
+
+Example:
+
+```
+server-port
+```
+
+Kebab case is **not commonly used in Java variables**, but it is used in external configurations:
+
+* URLs / REST APIs -> GET /user-profile
+* Configuration files -> application.properties -> server-port=8080
+
+---
+
+# 11. Java Naming Convention Summary
 
 | Element   | Naming Style     | Example            |
 |-----------|------------------|--------------------|
@@ -215,7 +224,7 @@ public class Constants {
 
 ---
 
-# 11. Example Program Using Naming Conventions
+# 12. Example Program Using Naming Conventions
 
 ```java
 package com.core.java.identifiers;
@@ -242,7 +251,7 @@ public class StudentDetails {
 
 ---
 
-# 12. Conclusion
+# 13. Conclusion
 
 Identifiers are used to **name elements in a Java program** such as variables, methods, classes, and packages.
 

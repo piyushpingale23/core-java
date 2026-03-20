@@ -127,7 +127,7 @@ Output:
 
 ```
 Id: 1
-Name: Piyush
+Name: Jack
 ```
 
 ---
@@ -167,8 +167,8 @@ public class CopyConstructorExample {
 Output:
 
 ```
-1 Piyush
-1 Piyush
+1 Jack
+1 Jack
 ```
 
 ---
@@ -269,14 +269,3 @@ core-java
 ```
 
 ---
-
-# 12. Conclusion
-
-Constructors are an essential concept in Java because they ensure that objects are **properly initialized when they are created**.
-
-Understanding constructors is important for learning advanced Java topics such as:
-
-* Object-Oriented Programming
-* Dependency Injection
-* Frameworks like Spring
-* Design Patterns

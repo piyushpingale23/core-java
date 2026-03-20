@@ -47,13 +47,18 @@ enum Day {
 
 ```java
 public class WithoutConstructorEnum {
+    
     enum Day {
-        MONDAY, TUESDAY, WEDNESDAY
+        MONDAY, 
+        TUESDAY, 
+        WEDNESDAY
     }
+    
     public static void main(String[] args) {
         Day today = Day.MONDAY;
         System.out.println("Today is: " + today);
     }
+    
 }
 ```
 
@@ -77,10 +82,13 @@ enum WithConstructorEnum {
     LOW(1),
     MEDIUM(2),
     HIGH(3);
+    
     private int value;
+    
     Level(int value) {
         this.value = value;
     }
+    
     public int getValue() {
         return value;
     }
@@ -91,10 +99,12 @@ Usage:
 
 ```java
 public class EnumTest {
+    
     public static void main(String[] args) {
         Level level = Level.HIGH;
         System.out.println("Level value: " + level.getValue());
     }
+    
 }
 ```
 
@@ -118,7 +128,9 @@ Java automatically provides some useful methods for enums.
 ```java
 public class EnumValuesExample {
     enum Day {
-        MONDAY, TUESDAY, WEDNESDAY
+        MONDAY, 
+        TUESDAY, 
+        WEDNESDAY
     }
     public static void main(String[] args) {
 
@@ -131,29 +143,16 @@ public class EnumValuesExample {
 
 ---
 
-# 7. Advantages of Enums
-
-Enums provide several benefits:
-
-* **Type safety** – prevents invalid values
-* **Better readability**
-* **Centralized constants**
-* **Can contain fields, methods, and constructors**
-* Works well with **switch statements**
-
----
-
-# 8. When to Use Enums
+# 7. When to Use Enums
 
 Enums should be used when:
 
 * The variable should have **limited fixed values**
 * Constants are **related to each other**
-* You want **type-safe constants**
 
 ---
 
-# 9. Summary
+# 8. Summary
 
 Enums in Java are used to represent **a group of fixed constants**.
 
@@ -165,4 +164,12 @@ Key points:
 * Can contain variables, constructors, and methods
 * Frequently used with switch statements
 
-Enums are widely used in **real-world Java applications**, especially for defining **states, categories, and configuration values**.
+---
+
+# 9. Points to Remember
+
+Enum constants are public static final.
+
+Enum constructor is always private or package private, because enum define fix set of instances, java automatically creates exactly these instances once when enum class is loaded.
+
+We cannot create more instances of enum at runtime. If constructor in public then anyone can create object of enum.

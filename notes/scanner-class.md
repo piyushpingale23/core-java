@@ -186,19 +186,3 @@ core-java
 ```
 
 ---
-
-# 11. Conclusion
-
-The **Scanner class** is one of the most commonly used classes in Java for reading user input.
-
-It provides easy methods to read:
-
-* Strings
-* Numbers
-* Boolean values
-
-Scanner is widely used in:
-
-* Beginner Java programs
-* Console-based applications
-* Input handling in learning programs

@@ -9,7 +9,6 @@ public class ReadStringExample {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter a sentence -> ");
-
         String text = scanner.nextLine();
 
         System.out.println("You entered: " + text);

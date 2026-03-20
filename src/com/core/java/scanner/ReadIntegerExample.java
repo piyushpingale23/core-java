@@ -9,7 +9,6 @@ public class ReadIntegerExample {
         Scanner scanner = new Scanner(System.in);
 
         System.out.print("Enter a number -> ");
-
         int number = scanner.nextInt();
 
         System.out.println("Number is: " + number);

@@ -32,6 +32,48 @@ public class Student extends Object {
 
 ---
 
+# Object Creation & Method Call
+
+## Object Creation
+
+```java
+Student s = new Student();
+```
+
+* `Student` → Class name
+* `s` → Object reference variable (**stored in Stack**)
+* `new Student()` → Object created in **Heap memory**
+* JVM creates a **reference (address)** for the object
+* This reference is stored in variable `s`
+
+---
+
+## Note
+
+```java
+public class Student {
+    Student s = new Student();
+}
+```
+
+---
+
+## Method Call Flow
+
+```
+s.m1();
+```
+
+### What happens internally:
+
+1. `s` (in stack) refers to object in **heap**
+2. JVM identifies object type → `Student`
+3. JVM goes to **Method Area** and finds `m1()` bytecode
+4. JVM creates a **new stack frame** for `m1()`
+5. Method executes
+
+---
+
 # 2. Importance of Object Class
 
 The Object class provides **common methods** that are available to every Java class.
@@ -49,7 +91,7 @@ These methods help perform operations such as:
 # 3. Common Methods of Object Class
 
 | Method      | Description                             |
-| ----------- | --------------------------------------- |
+|-------------|-----------------------------------------|
 | toString()  | Returns string representation of object |
 | equals()    | Compares two objects                    |
 | hashCode()  | Returns hash code value                 |
@@ -108,6 +150,8 @@ Output:
 # 5. equals() Method
 
 The `equals()` method compares **two objects for equality**.
+
+equals() in Object class compares reference (memory address), not actual object content.
 
 ### Example
 
@@ -324,22 +368,3 @@ core-java
 ```
 
 ---
-
-# 12. Conclusion
-
-The **Object class** is the most fundamental class in Java.
-
-It provides common methods that allow objects to:
-
-* Compare themselves
-* Represent themselves as strings
-* Provide unique hash codes
-* Clone objects
-* Access runtime class information
-
-Understanding the Object class is important for learning advanced topics such as:
-
-* Collections Framework
-* Multithreading
-* Object comparison
-* Java frameworks like Spring and Hibernate

@@ -15,7 +15,6 @@ public class AdditionExample {
         int num2 = scanner.nextInt();
 
         int sum = num1 + num2;
-
         System.out.println("Sum = " + sum);
 
         scanner.close();
