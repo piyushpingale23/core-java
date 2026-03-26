@@ -45,6 +45,7 @@ System.out.println(i); // Output: 100
 ### a) Upcasting (Implicit / Widening)
 - Converting child object to parent type.
 - Safe and implicit.
+- `When we use a parent class reference to hold a child class object, it is called Upcasting.`
 - Example:
 
 ````java

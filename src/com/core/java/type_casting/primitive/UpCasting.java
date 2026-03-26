@@ -1,5 +1,8 @@
 package com.core.java.type_casting.primitive;
 
+// UpCasting = Winding = Implicit
+// byte -> short -> int -> long -> float -> double
+// done automatically by java
 public class UpCasting {
 
     public static void main(String[] args) {

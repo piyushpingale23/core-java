@@ -4,6 +4,7 @@ package com.core.java.this_super_static.static_keyword;
 class StaticKeyword1 {
 
     static int count = 0;
+    public static final String s = "StaticKeyword1";
 
     StaticKeyword1() {
         count++;
@@ -17,6 +18,11 @@ class StaticKeyword1 {
 
         StaticKeyword1 s1 = new StaticKeyword1();
         StaticKeyword1 s2 = new StaticKeyword1();
+
+        System.out.println(s);
+        System.out.println(s1.s);
+        System.out.println(s2.s);
+        System.out.println(StaticKeyword1.s);
 
         s1.show();
         s2.show();

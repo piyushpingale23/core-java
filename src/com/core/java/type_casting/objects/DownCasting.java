@@ -9,12 +9,14 @@ public class DownCasting {
     }
 }
 
+// parent class
 class Animal1 {
     void eat() {
         System.out.println("Animal eats");
     }
 }
 
+// child class
 class Fox extends Animal1 {
     void bark() {
         System.out.println("Fox barks");

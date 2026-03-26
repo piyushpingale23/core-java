@@ -1,5 +1,8 @@
 package com.core.java.type_casting.primitive;
 
+// DownCasting = Narrowing = Explicit
+// double -> float -> long -> int -> short -> byte
+// need to do manually, chances data loss
 public class DownCasting {
 
     public static void main(String[] args) {
