@@ -2,7 +2,7 @@ package com.core.java.constructor;
 
 public class DefaultConstructor {
 
-    int number;
+    int number; // -> number variable belongs to class and object is instance of class, so if you want to access that variable it accesses via instance(object).
 
     // Default constructor
     DefaultConstructor() {

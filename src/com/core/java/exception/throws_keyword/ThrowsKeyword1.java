@@ -17,7 +17,7 @@ public class ThrowsKeyword1 {
 
     static void readFile() throws IOException {
 
-        FileReader file = new FileReader("test.txt");
+        FileReader file = new FileReader("throwKeyword1.txt");
         // (If file not found → IOException)
 
         BufferedReader br = new BufferedReader(file);

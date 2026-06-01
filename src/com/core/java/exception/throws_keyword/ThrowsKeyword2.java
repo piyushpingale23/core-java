@@ -17,7 +17,7 @@ public class ThrowsKeyword2 {
     static void process() throws IOException, ArithmeticException {
         // (Declaring multiple exceptions)
 
-        FileReader file = new FileReader("abc.txt"); // IOException
+        FileReader file = new FileReader("throwKeyword2.txt"); // IOException
 
         int x = 10 / 0; // ArithmeticException
 

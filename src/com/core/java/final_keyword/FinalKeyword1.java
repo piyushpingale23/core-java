@@ -49,5 +49,7 @@ public class FinalKeyword1 {
         final int i = 10;
 
         // i = 20;  // Compile-time error
+
+        System.out.println(i);
     }
 }

@@ -4,7 +4,7 @@ public class Composition {
 
     public static void main(String[] args) {
 
-        Car c = new Car();
+        Car c = new Car(new Engine());
         c.startCar();
     }
 }
@@ -12,7 +12,7 @@ public class Composition {
 class Engine {
 
     void start() {
-
+        System.out.println("Engine started!");
     }
 }
 
@@ -20,8 +20,8 @@ class Car {
 
     private final Engine engine;
 
-    public Car() {
-        engine = new Engine(); // Car creates Engine
+    public Car(Engine engine) {
+        this.engine = engine; // Car creates Engine
     }
 
     void startCar() {

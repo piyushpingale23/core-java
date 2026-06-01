@@ -80,16 +80,25 @@ package com.core.java.final_keyword;
  */
 public class FinalKeyword3 {
 
-    private static final String NAME = "Final";
+    // one way to initialize the final variable at the declaration only
+    private static final String NAME1 = "Final";
+
+    /// another way to initialize the final variable through static block
+    private static final String NAME2;
+    static {
+        NAME2 = "Variable";
+    }
 
     public static void main(String[] args) {
 
         // Accessing constant
-        System.out.println(NAME); // Output: Final
+        System.out.println(NAME1); // Output: Final
+        System.out.println(NAME2); // Output: Variable
 
         // Recommended way
-        System.out.println(FinalKeyword3.NAME);
+        System.out.println(FinalKeyword3.NAME1);
+        System.out.println(FinalKeyword3.NAME2);
 
-        // NAME = "Changed"; // ❌ Compile-time error
+        // NAME1 = "Changed"; // Compile-time error
     }
 }
