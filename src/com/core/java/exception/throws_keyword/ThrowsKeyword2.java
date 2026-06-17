@@ -5,16 +5,17 @@ import java.io.IOException;
 
 public class ThrowsKeyword2 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        try {
-            process();
-        } catch (IOException | ArithmeticException e) {
-            System.out.println("Handled: " + e);
-        }
+        process();
+//        try {
+//            process();
+//        } catch (IOException | ArithmeticException e) {
+//            System.out.println("Handled: " + e);
+//        }
     }
 
-    static void process() throws IOException, ArithmeticException {
+    static void process() throws IOException {
         // (Declaring multiple exceptions)
 
         FileReader file = new FileReader("throwKeyword2.txt"); // IOException

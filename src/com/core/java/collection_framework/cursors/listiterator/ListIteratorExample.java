@@ -42,7 +42,7 @@ public class ListIteratorExample {
         Creating ListIterator
         =========================
         */
-        ListIterator<Integer> it = list.listIterator();
+        ListIterator<Integer> itr = list.listIterator();
 
         /*
         =========================
@@ -51,8 +51,8 @@ public class ListIteratorExample {
         */
         System.out.println("\nForward Traversal:");
 
-        while (it.hasNext()) {
-            Integer value = it.next();
+        while (itr.hasNext()) {
+            Integer value = itr.next();
             System.out.println(value);
 
             /*
@@ -60,7 +60,7 @@ public class ListIteratorExample {
             Replace 20 with 200
             */
             if (value == 20) {
-                it.set(200);
+                itr.set(200);
             }
         }
 
@@ -73,8 +73,8 @@ public class ListIteratorExample {
         */
         System.out.println("\nBackward Traversal:");
 
-        while (it.hasPrevious()) {
-            System.out.println(it.previous());
+        while (itr.hasPrevious()) {
+            System.out.println(itr.previous());
         }
 
         /*
@@ -82,13 +82,13 @@ public class ListIteratorExample {
         Insertion using ListIterator
         =========================
         */
-        it = list.listIterator();
+        itr = list.listIterator();
 
-        while (it.hasNext()) {
-            Integer value = it.next();
+        while (itr.hasNext()) {
+            Integer value = itr.next();
 
             if (value == 30) {
-                it.add(35);
+                itr.add(35);
             }
         }
 

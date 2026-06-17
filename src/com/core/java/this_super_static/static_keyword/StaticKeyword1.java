@@ -36,6 +36,6 @@ class StaticKeyword1 {
 //Only one copy is created in memory
 //
 //Flow :
-//Class loads → count = 0
-//s1 object created → constructor runs → count = 1
-//s2 object created → constructor runs → count = 2
+//Class loads -> count = 0
+//s1 object created -> constructor runs -> count = 1
+//s2 object created -> constructor runs -> count = 2

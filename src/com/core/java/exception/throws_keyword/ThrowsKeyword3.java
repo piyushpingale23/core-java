@@ -13,7 +13,7 @@ public class ThrowsKeyword3 {
 
     static void method1() throws Exception {
         method2();
-        // (Exception is not handled here → propagated to caller)
+        // (Exception is not handled here -> propagated to caller)
     }
 
     static void method2() throws Exception {

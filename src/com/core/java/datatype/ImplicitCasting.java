@@ -28,10 +28,10 @@ public class ImplicitCasting {
         byte number = 10;
 
         System.out.println("Original byte value: " + number);
-        System.out.println("Converted to short: " + (short) number);
-        System.out.println("Converted to int: " + (int) number);
-        System.out.println("Converted to long: " + (long) number);
+        System.out.println("Converted to short: " +  number);
+        System.out.println("Converted to int: " +  number);
+        System.out.println("Converted to long: " +  number);
         System.out.println("Converted to float: " + (float) number);
-        System.out.println("Converted to double: " + (double) number);
+        System.out.println("Converted to double: " +  number);
     }
 }

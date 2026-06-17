@@ -11,7 +11,7 @@ public class SuperKeyword2 {
 class Test2 extends SuperKeyword2 {
 
     Test2() {
-        super();
+//        super();
         System.out.println("Child constructor");
     }
 

@@ -6,7 +6,7 @@ public class ThrowKeyword4 {
     public static void main(String[] args) {
 
         method1();
-        // (No try-catch → JVM will handle)
+        // (No try-catch -> JVM will handle)
     }
 
     static void method1() {
@@ -15,6 +15,6 @@ public class ThrowKeyword4 {
 
     static void method2() {
         throw new RuntimeException("Error occurred");
-        // (Exception propagates → main → JVM default handler)
+        // (Exception propagates -> main -> JVM default handler)
     }
 }

@@ -24,20 +24,8 @@ public class ConcurrentHashMapConstructors {
          *
          * 1. ConcurrentHashMap()
          * 2. ConcurrentHashMap(int initialCapacity)
-         * 3. ConcurrentHashMap(int initialCapacity,
-         *                      float loadFactor)
+         * 3. ConcurrentHashMap(int initialCapacity, float loadFactor)
          * 4. ConcurrentHashMap(Map<? extends K, ? extends V> m)
-         *
-         * NOTE:
-         * Older Java versions also had:
-         *
-         * ConcurrentHashMap(int initialCapacity,
-         *                   float loadFactor,
-         *                   int concurrencyLevel)
-         *
-         * In modern Java versions, concurrencyLevel is mostly
-         * ignored internally and is retained mainly for
-         * backward compatibility.
          *
          * ==========================================================
          */
@@ -55,8 +43,7 @@ public class ConcurrentHashMapConstructors {
          * ConcurrentHashMap()
          */
 
-        ConcurrentHashMap<Integer, String> map1 =
-                new ConcurrentHashMap<>();
+        ConcurrentHashMap<Integer, String> map1 = new ConcurrentHashMap<>();
 
         map1.put(101, "John");
         map1.put(102, "David");
@@ -82,8 +69,7 @@ public class ConcurrentHashMapConstructors {
          * This helps reduce resizing operations.
          */
 
-        ConcurrentHashMap<Integer, String> map2 =
-                new ConcurrentHashMap<>(100);
+        ConcurrentHashMap<Integer, String> map2 = new ConcurrentHashMap<>(100);
 
         map2.put(201, "Scott");
         map2.put(202, "Martin");
@@ -124,8 +110,7 @@ public class ConcurrentHashMapConstructors {
          * After 75 entries, resizing may occur.
          */
 
-        ConcurrentHashMap<Integer, String> map3 =
-                new ConcurrentHashMap<>(100, 0.75f);
+        ConcurrentHashMap<Integer, String> map3 = new ConcurrentHashMap<>(100, 0.75f);
 
         map3.put(301, "A");
         map3.put(302, "B");
@@ -141,21 +126,18 @@ public class ConcurrentHashMapConstructors {
          *
          * Syntax:
          *
-         * ConcurrentHashMap(Map<? extends K,
-         *                   ? extends V> m)
+         * ConcurrentHashMap(Map<? extends K, ? extends V> m)
          *
          * Creates a ConcurrentHashMap and copies all entries
          * from the supplied map.
          */
 
-        Map<Integer, String> existingMap =
-                new HashMap<>();
+        Map<Integer, String> existingMap = new HashMap<>();
 
         existingMap.put(401, "Ravi");
         existingMap.put(402, "Priya");
 
-        ConcurrentHashMap<Integer, String> map4 =
-                new ConcurrentHashMap<>(existingMap);
+        ConcurrentHashMap<Integer, String> map4 = new ConcurrentHashMap<>(existingMap);
 
         System.out.println("\nConstructor with Existing Map");
         System.out.println(map4);
@@ -204,12 +186,11 @@ public class ConcurrentHashMapConstructors {
          *
          * CAS + synchronized bucket locking is used internally.
          *
-         * Therefore concurrencyLevel has very little practical
+         * Therefore, concurrencyLevel has very little practical
          * effect in modern Java versions.
          */
 
-        ConcurrentHashMap<Integer, String> map5 =
-                new ConcurrentHashMap<>(100, 0.75f, 16);
+        ConcurrentHashMap<Integer, String> map5 = new ConcurrentHashMap<>(100, 0.75f, 16);
 
         map5.put(501, "X");
         map5.put(502, "Y");

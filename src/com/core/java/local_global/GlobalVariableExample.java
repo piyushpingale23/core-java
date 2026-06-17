@@ -2,6 +2,7 @@ package com.core.java.local_global;
 
 public class GlobalVariableExample {
 
+    // No need to initialize compulsory, it is done by constructor also.
     int number = 50; // global (instance) variable
 
     public void display() {

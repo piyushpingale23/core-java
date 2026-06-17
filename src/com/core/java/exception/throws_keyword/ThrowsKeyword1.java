@@ -6,13 +6,14 @@ import java.io.IOException;
 
 public class ThrowsKeyword1 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
-        try {
-            readFile();
-        } catch (IOException e) {
-            System.out.println("Handled: " + e.getMessage());
-        }
+        readFile();
+//        try {
+//            readFile();
+//        } catch (IOException e) {
+//            System.out.println("Handled: " + e.getMessage());
+//        }
     }
 
     static void readFile() throws IOException {

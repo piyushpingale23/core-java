@@ -13,8 +13,8 @@ public class ThrowKeyword1 {
 
         validateAgeForVoting (age);
 
-/*        if caller method handle the exception
-        try {
+//        if caller method handle the exception
+        /*try {
             validateAgeForVoting(age);
         } catch (ArithmeticException e) {
             System.out.println(e.getMessage());

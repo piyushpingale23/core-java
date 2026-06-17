@@ -67,6 +67,7 @@ LIMITATIONS OF ENUMERATION
 
 2. Only works with legacy classes
    - Vector
+   - Stack
    - Hashtable
    (NOT supported by ArrayList, HashMap, etc.)
 

@@ -8,8 +8,10 @@ public class FinallyWithReturn {
 
     static int test() {
         try {
+            System.out.println("in try");
             return 1;
         } finally {
+            System.out.println("in finally");
             return 2;
         }
     }

@@ -4,10 +4,10 @@ public class EqualsExample {
 
     public static void main(String[] args) {
 
-        Person p1 = new Person(1, "John");
-        Person p2 = new Person(1, "Cena");
+        EqualsExample e1 = new EqualsExample();
+        EqualsExample e2 = new EqualsExample();
 
-        System.out.println(p1.equals(p2));
+        System.out.println(e1.equals(e2));
 
     }
 

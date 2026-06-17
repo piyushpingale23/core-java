@@ -29,7 +29,7 @@ public class ArraysConversion {
 
         /*
         ========================================================
-        1. List → Array using toArray()
+        1. List -> Array using toArray()
         ========================================================
         */
 
@@ -51,7 +51,7 @@ public class ArraysConversion {
 
         /*
         ========================================================
-        2. Array → List using asList()
+        2. Array -> List using asList()
         ========================================================
         */
 

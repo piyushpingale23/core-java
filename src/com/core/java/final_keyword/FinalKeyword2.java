@@ -70,6 +70,7 @@ public class FinalKeyword2 {
         // i = 20;
 
         // Correct initialization
+        // this.i = 20;
         this.i = i;
     }
 

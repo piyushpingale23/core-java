@@ -43,7 +43,7 @@ public class IteratorExample {
         Creating Iterator
         =========================
         */
-        Iterator<Integer> it = list.iterator();
+        Iterator<Integer> itr = list.iterator();
 
         /*
         =========================
@@ -52,8 +52,8 @@ public class IteratorExample {
         */
         System.out.println("\nUsing Iterator:");
 
-        while (it.hasNext()) {
-            Integer value = it.next();
+        while (itr.hasNext()) {
+            Integer value = itr.next();
 
             System.out.println(value);
 
@@ -62,7 +62,7 @@ public class IteratorExample {
             Removes element 20 during iteration
             */
             if (value == 20) {
-                it.remove();
+                itr.remove();
             }
         }
 

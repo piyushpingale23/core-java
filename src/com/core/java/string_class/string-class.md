@@ -349,3 +349,14 @@ sb → Hello
 * StringBuilder → Fast + Mutable (Not Safe)
 
 ---
+
+# For More Practice
+
+* Find first non-repeating character
+* Check if two Strings are Anagrams
+* Find the most frequent character in a String
+* Reverse each word in a sentence
+* Remove duplicate characters from String
+* Longest substring without repeating characters -> "abcabcbb" = "abc"
+* Longest palindromic substring -> "babad" = "bab" or "aba"
+* String compression -> "aaabbc" = "a3b2c1"

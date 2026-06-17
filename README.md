@@ -1,326 +1,178 @@
-# Core Java Project Overview
+# Core Java
 
-This repository contains **Core Java concepts organized in a package-wise structure with `.md` documentation and example programs**.
-The project is designed as a **learning and reference repository for Java fundamentals**.
+A comprehensive collection of Core Java programs, examples, notes, and interview-oriented implementations covering fundamental to advanced Java concepts.
 
----
+## Topics Covered
 
-# Topics Covered in This Project
+### Java Fundamentals
 
-The following **Core Java topics are included or planned to be covered** in this repository.
+* Variables and Data Types
+* Operators
+* Control Statements
+* Arrays
+* Strings
+* Wrapper Classes
 
----
+### Object-Oriented Programming
 
-## 1. Java Basics
+* Class and Object
+* Constructor
+* Inheritance
+* Polymorphism
+* Abstraction
+* Encapsulation
+* Interface
+* Association, Aggregation, Composition
 
-* Introduction to Java
-* Java program structure
-* Compilation and execution process
-* JVM, JRE, JDK overview
+### Exception Handling
 
----
+* Try-Catch-Finally
+* Throw and Throws
+* Custom Exceptions
 
-## 2. Data Types
+### Collections Framework
 
-* Primitive data types
-* Non-primitive data types
-* Type casting
+* List
+* Set
+* Queue
+* Map
+* Iterator
+* Comparable
+* Comparator
 
-Package:
+### Generics
 
-```
-datatype
-```
+* Generic Classes
+* Generic Methods
+* Wildcards
 
----
+### Multithreading
 
-## 3. Variables
+* Thread Class
+* Runnable Interface
+* Thread Lifecycle
+* Synchronization
+* Inter-Thread Communication
+* Executor Framework
 
-* Local variables
-* Instance variables
-* Static variables
+### Java 8 Features
 
-Package:
+* Lambda Expressions
+* Functional Interfaces
+* Method References
+* Stream API
+* Optional
+* Default Methods
+* Static Methods
+* Predicate
+* Consumer
+* Supplier
+* Function
+* Method Chaining
+* Date and Time API
 
-```
-localglobal
-```
+### Design Principles (SOLID)
 
----
+#### S - Single Responsibility Principle (SRP)
 
-## 4. Operators
+A class should have only one reason to change.
 
-* Arithmetic operators
-* Relational operators
-* Logical operators
-* Assignment operators
-* Unary operators
-* Ternary operator
-* Bitwise operators
+#### O - Open/Closed Principle (OCP)
 
-Package:
+Software entities should be open for extension but closed for modification.
 
-```
-operators
-```
+#### L - Liskov Substitution Principle (LSP)
 
----
+Objects of a superclass should be replaceable with objects of its subclasses.
 
-## 5. Control Statements
+#### I - Interface Segregation Principle (ISP)
 
-### Conditional Statements
+Clients should not be forced to depend on interfaces they do not use.
 
-* if
-* if-else
-* nested if
-* switch
+#### D - Dependency Inversion Principle (DIP)
 
-### Looping Statements
+High-level modules should not depend on low-level modules; both should depend on abstractions.
 
-* for loop
-* while loop
-* do-while loop
+### File Handling
 
-### Jump Statements
+* File Operations
+* Buffered Streams
+* Serialization
+* Deserialization
 
-* break
-* continue
-* return
+### Reflection API
 
-Package:
+* Class Metadata
+* Dynamic Method Invocation
+* Accessing Fields and Methods at Runtime
 
-```
-controlstatements
-```
+### Design Patterns
 
----
+* Singleton Pattern
+* Factory Pattern
+* Builder Pattern
 
-## 6. Arrays
+### Interview Programs
 
-* Single dimensional array
-* Multi-dimensional array
-* Array iteration
-* Array input using Scanner
+* String Programs
+* Collection Programs
+* Stream API Programs
+* Multithreading Programs
+* Comparator and Comparable Examples
+* Java 8 Coding Questions
 
-Package:
+## Project Structure
 
-```
-arrays
-```
-
----
-
-## 7. User Input
-
-Programs for reading input using:
-
-* Scanner class
-
-Packages:
-
-```
-scanner
-```
-
----
-
-## 8. OOPs
-
-* Classes and objects
-* Methods
-* Method parameters
-* Method overloading
-
-Package:
-
-```
-classesobjects
-methods
-```
-
----
-
-## 9. Constructors
-
-Examples demonstrating:
-
-* Default constructor
-* Parameterized constructor
-* Copy constructor
-* Constructor overloading
-
-Package:
-
-```
-constructor
+```text
+src/
+├── java_fundamentals/
+├── oops/
+├── collections/
+├── multithreading/
+├── java_8/
+├── exception_handling/
+├── generics/
+├── reflection/
+├── design_principles/
+├── design_patterns/
 ```
 
----
+## Prerequisites
 
-## 10. Object Class Methods
+* Java 8 or higher
+* IntelliJ IDEA / Eclipse / VS Code
 
-Implementation of common methods inherited from `Object` class:
+## Clone Repository
 
-* toString()
-* equals()
-* hashCode()
-* getClass()
-
-Package:
-
-```
-objectclass
+```bash
+git clone https://github.com/piyushpingale23/core-java.git
 ```
 
----
+## Run Program
 
-## 11. Strings
+Compile:
 
-Topics related to string handling:
-
-* String class
-* String methods
-* StringBuilder
-* StringBuffer
-
-Package:
-
-```
-string
+```bash
+javac FileName.java
 ```
 
----
+Run:
 
-## 12. Access Modifiers
-
-Examples showing usage of:
-
-* public
-* private
-* protected
-* default
-
-Package:
-
-```
-accessmodifier
+```bash
+java FileName
 ```
 
----
+## Purpose
 
-## 13. Static Keyword
+This repository is intended for:
 
-* Static variables
-* Static methods
-* Static blocks
+* Java Beginners
+* Interview Preparation
+* Java Revision and Practice
+* Understanding Core Java Concepts Through Examples
+* Learning Java 8 Features
+* Understanding SOLID Design Principles
 
-Package:
+## Author
 
-```
-statickeyword
-```
-
----
-
-## 14. Final Keyword
-
-Usage of:
-
-* final variables
-* final methods
-* final classes
-
-Package:
-
-```
-finalkeyword
-```
-
----
-
-## 15. Exception Handling
-
-Basic exception handling concepts:
-
-* try
-* catch
-* finally
-* throw
-* throws
-
-Package:
-
-```
-exceptionhandling
-```
-
----
-
-## 16. Collections Framework (Basic)
-
-Introduction to common collections:
-
-* ArrayList
-* LinkedList
-* HashSet
-* HashMap
-
-Package:
-
-```
-collections
-```
-
----
-
-# Project Package Structure
-
-```
-core-java
-│
-└── src
-    └── com
-        └── core
-            └── java
-                ├── basics
-                ├── datatype
-                ├── localglobal
-                ├── operators
-                ├── controlstatements
-                ├── arrays
-                ├── scanner
-                ├── commandline
-                ├── classesobjects
-                ├── methods
-                ├── constructor
-                ├── objectclass
-                ├── string
-                ├── accessmodifier
-                ├── statickeyword
-                ├── finalkeyword
-                ├── exceptionhandling
-                └── collections
-```
-
----
-
-# Purpose of This Repository
-
-This project is created to:
-
-* Learn **Core Java fundamentals**
-* Practice Java concepts using **small examples**
-* Maintain **organized package-wise code structure**
-* Provide **documentation using Markdown files**
-* Serve as a **reference for Java beginners**
-
----
-
-# Repository Goal
-
-To build a **complete Core Java learning repository** that gradually covers:
-
-* Java fundamentals
-* Object-oriented programming concepts
-* Standard Java libraries
-* Basic collections and exception handling
+Piyush Ingale

@@ -22,14 +22,14 @@ package com.core.java.design_pattern.singleton;
  *
  * Instead, we create only ONE shared connection manager:
  *
- * App Modules ─────────────► Single DB Connection Object
+ * App Modules -----> Single DB Connection Object
  *
  * ---------------------------------------------------------
  * Key Idea:
  * ---------------------------------------------------------
  * - Constructor is PRIVATE → prevents external object creation
- * - Static instance → holds single object
- * - getInstance() → provides global access point
+ * - Static instance -> holds single object
+ * - getInstance() -> provides global access point
  *
  * ---------------------------------------------------------
  * When to use Singleton:
@@ -42,14 +42,14 @@ package com.core.java.design_pattern.singleton;
  * ---------------------------------------------------------
  * Important Behavior:
  * ---------------------------------------------------------
- * - First call → object is created
- * - Next calls → same object is returned
+ * - First call -> object is created
+ * - Next calls -> same object is returned
  * - Hence all references point to same memory location
  *
  * ---------------------------------------------------------
  * Result:
  * ---------------------------------------------------------
- * s1 == s2 → true (same object reference)
+ * s1 == s2 -> true (same object reference)
  * =========================================================
  */
 

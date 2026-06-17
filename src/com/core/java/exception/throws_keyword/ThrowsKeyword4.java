@@ -3,7 +3,7 @@ package com.core.java.exception.throws_keyword;
 public class ThrowsKeyword4 {
 
     public static void main(String[] args) throws Exception {
-        // (main() also declares → JVM will handle if not caught)
+        // (main() also declares -> JVM will handle if not caught)
         // abnormal termination
 
         test();

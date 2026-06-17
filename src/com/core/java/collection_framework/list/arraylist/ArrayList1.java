@@ -49,6 +49,8 @@ public class ArrayList1 {
         /*
         ========================================================
         1. Using for loop (index-based)
+           Here, no Iterator object is created by the loop itself.
+           because elements are accessed directly by index.
         ========================================================
         */
 
@@ -60,6 +62,7 @@ public class ArrayList1 {
         /*
         ========================================================
         2. Using for-each loop
+           for-each uses an Iterator internally for collections.
         ========================================================
         */
 
@@ -93,9 +96,9 @@ public class ArrayList1 {
         /*
         Key Observations:
         ------------------------------------------------
-        1. for loop → best when index is needed
-        2. for-each → simple and readable
-        3. Iterator → safe removal + legacy-compatible traversal
+        1. for loop -> best when index is needed
+        2. for-each -> simple and readable
+        3. Iterator -> safe removal + legacy-compatible traversal
         */
     }
 }
