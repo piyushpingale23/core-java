@@ -4,6 +4,6 @@ public class Jenkins {
 
     public static void main(String[] args) {
 
-        System.out.println("Integrated with jenkins v1");
+        System.out.println("Integrated with jenkins v2");
     }
 }
