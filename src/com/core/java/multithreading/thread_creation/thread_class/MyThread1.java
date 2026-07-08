@@ -12,8 +12,8 @@ public class MyThread1 extends Thread {
 
     public static void main(String[] args) {
 
-        MyThread1 t1 = new MyThread1();
-        t1.start();
+        MyThread1 t1 = new MyThread1(); // main thread create the child thread object (child thread instantiation)
+        t1.start(); // main thread start child thread
         System.out.println("Main Thread!");
     }
 }

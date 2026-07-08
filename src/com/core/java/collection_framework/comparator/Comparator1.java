@@ -35,9 +35,9 @@ public class Comparator1 implements Comparator<Integer> {
 
         /*
         compare() return rules:
-        - positive → i1 > i2
-        - negative → i1 < i2
-        - 0        → both considered equal (duplicate in TreeSet)
+        - positive -> i1 > i2
+        - negative -> i1 < i2
+        - 0        -> both considered equal (duplicate in TreeSet)
         */
 
         // Ascending order
@@ -55,8 +55,8 @@ public class Comparator1 implements Comparator<Integer> {
         /*
         IMPORTANT CASE:
         If we return 0:
-        → TreeSet treats all elements as duplicates
-        → only first inserted element will remain
+        -> TreeSet treats all elements as duplicates
+        -> only first inserted element will remain
         */
         return 0;
     }
@@ -88,13 +88,13 @@ class Test {
         Key Observations:
 
         CASE 1: ascending (i1 - i2)
-        → [5, 10, 15, 20]
+        -> [5, 10, 15, 20]
 
         CASE 2: descending (i2 - i1)
-        → [20, 15, 10, 5]
+        -> [20, 15, 10, 5]
 
         CASE 3: return 0
-        → [10]
+        -> [10]
         (all others treated as duplicates)
         */
     }

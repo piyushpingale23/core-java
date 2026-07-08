@@ -1,6 +1,6 @@
 package com.core.java.java_8.stream_api.practice_examples;
 
-class Employee implements Comparable<Employee> {
+public class Employee implements Comparable<Employee> {
 
     private int id;
     private String name;

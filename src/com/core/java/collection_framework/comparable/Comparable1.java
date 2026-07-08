@@ -31,9 +31,9 @@ public class Comparable1 {
         Integer already implements Comparable<Integer>
 
         compareTo rules:
-        - positive → first object is greater
-        - negative → first object is smaller
-        - 0        → both are equal
+        - positive -> first object is greater
+        - negative -> first object is smaller
+        - 0        -> both are equal
         */
 
         System.out.println("a.compareTo(b): " + a.compareTo(b));

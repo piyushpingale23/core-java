@@ -74,9 +74,9 @@ class Employee implements Comparable<Employee> {
 
     /*
     compareTo logic:
-    - returns positive → this object is smaller (for descending order)
-    - returns negative → this object is greater
-    - 0 → considered duplicate in TreeSet
+    - returns positive -> this object is smaller (for descending order)
+    - returns negative -> this object is greater
+    - 0                -> considered duplicate in TreeSet
     */
 
     public int compareTo(Employee e) {

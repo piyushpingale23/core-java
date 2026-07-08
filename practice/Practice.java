@@ -1,25 +1,15 @@
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-import java.util.TreeSet;
+import com.core.java.java_8.stream_api.practice_examples.Employee;
+
+import java.util.*;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class Practice {
 
     public static void main(String[] args) {
 
-       String s = "piyush ingale";
-       List<Character> duplicateCharList = new ArrayList<>();
-
-       for (int i = 0; i < s.length(); i++) {
-
-           if (s.contains(String.valueOf(s.charAt(i)))) {
-               duplicateCharList.add(s.charAt(i));
-           }
-       }
-
-        System.out.println(duplicateCharList);
-
+       System.out.println("Integrated core java repo with jenkins");
 
     }
+
 
 }
