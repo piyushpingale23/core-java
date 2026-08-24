@@ -27,12 +27,7 @@ public class ThreadConstructors {
          * 2. Thread(Runnable target)
          * Creates a thread and assigns a Runnable task to it.
          */
-        Runnable task = new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("Runnable task executed by Thread");
-            }
-        };
+        Runnable task = () -> System.out.println("Runnable task executed by Thread");
 
         Thread t2 = new Thread(task);
         t2.start(); // executes Runnable run()

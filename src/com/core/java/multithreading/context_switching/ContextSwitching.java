@@ -36,9 +36,7 @@ public class ContextSwitching {
 
             for (int i = 1; i <= 5; i++) {
 
-                System.out.println(
-                        Thread.currentThread().getName() + " : " + i
-                );
+                System.out.println(Thread.currentThread().getName() + " : " + i);
 
                 try {
 
@@ -61,9 +59,7 @@ public class ContextSwitching {
 
             for (char ch = 'A'; ch <= 'E'; ch++) {
 
-                System.out.println(
-                        Thread.currentThread().getName() + " : " + ch
-                );
+                System.out.println(Thread.currentThread().getName() + " : " + ch);
 
                 try {
                     Thread.sleep(500);
