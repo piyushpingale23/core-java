@@ -1,8 +1,6 @@
 package com.core.java.java_8.stream_api.practice_examples;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 
 public class Practice {
 
@@ -14,8 +12,14 @@ public class Practice {
 
         List<Employee> employeeList = Arrays.asList(e1, e2, e3);
 
-        employeeList.stream()
-                .sorted((a, b) -> Double.compare(b.getSalary(), a.getSalary()))
-                .forEach(e -> System.out.println(e.getId()));
+        List<Integer> numbers = Arrays.asList(10, 60, 70, 20, 90, 60, 70);
+
+        List<String> name = Arrays.asList("a", "c", "e", "b", "d");
+
+        Set<Integer> set = new HashSet<>();
+        List<Integer> duplicate = numbers.stream()
+                .filter(n -> !set.add(n))
+                .toList();
+        System.out.println(duplicate);
     }
 }

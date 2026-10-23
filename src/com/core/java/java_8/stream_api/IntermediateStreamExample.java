@@ -49,7 +49,7 @@ public class IntermediateStreamExample {
 
         System.out.println("sorted() example: (Descending Order)");
         numbers.stream()
-                .sorted((a,b) -> a > b ? -1 : a < b ? 1 : 0)
+                .sorted((a,b) -> b - a)
 //                .sorted((a,b) -> b.compareTo(a))
                 .forEach(System.out::println);
         System.out.println("Descending Sorting List : " + numbers);

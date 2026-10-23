@@ -18,7 +18,11 @@ public class WordCountExample {
                 count++;
             }
         }
+
+        String[] sArray = s.split(" ");
+
         System.out.println("Word count = " + count);
+        System.out.println("Word count = " + sArray.length);
 
 
 //        String[] words = s.trim().split("\\s+");
