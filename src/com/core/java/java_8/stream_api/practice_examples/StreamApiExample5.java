@@ -17,7 +17,7 @@ public class StreamApiExample5 {
 
         Employee lowestPaidEmployeeName = employeeList.stream()
 //                .sorted((a, b) -> Double.compare(a.getSalary(), b.getSalary()))
-                .sorted(Comparator.comparing(Employee::getSalary))
+                .sorted()
                 .toList()
                 .getFirst();
         System.out.println("Lowest paid employee: " + lowestPaidEmployeeName.getName());

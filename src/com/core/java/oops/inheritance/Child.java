@@ -19,6 +19,10 @@ public class Child extends Parent{
         System.out.println("Child m2()");
     }
 
+    public static void m4() {
+        System.out.println("Parent static m4()");
+    }
+
     public static void main(String[] args) {
 
         System.out.println("Parent Reference, Parent Object");
@@ -26,6 +30,7 @@ public class Child extends Parent{
         p1.m1();
         // p1.m2() -> Parent do not have m2(), so it give compile-error
         p1.m3();
+        p1.m4();
         System.out.println(p1.a);
         System.out.println(p1.b);
         //System.out.println(p1.c); -> Parent do not have 'c' variable, so it give compile-error
@@ -36,6 +41,7 @@ public class Child extends Parent{
         p2.m1();
         // p2.m2() -> Parent do not have m2(), so it give compile-error
         p2.m3();
+        p2.m4();
         System.out.println(p1.a);
         System.out.println(p1.b);
         //System.out.println(p1.c); -> Parent do not have 'c' variable, so it give compile-error
@@ -46,6 +52,7 @@ public class Child extends Parent{
         c.m1();
         c.m2();
         c.m3();
+        c.m4();
         System.out.println(c.a);
         System.out.println(c.b);
         System.out.println(c.c);

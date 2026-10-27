@@ -17,4 +17,8 @@ public class Parent {
         System.out.println("Parent m3()");
     }
 
+    public static void m4() {
+        System.out.println("Parent static m4()");
+    }
+
 }

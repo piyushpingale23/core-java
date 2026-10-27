@@ -4,6 +4,8 @@ public class MainInterfaceClass {
 
     public static void main(String[] args) {
 
+        String s = "Main Class";
+
         Payment upi = new UpiPayment();
         upi.pay(500);
 
